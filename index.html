@@ -3,76 +3,92 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sharwa's Dev Ops Journey</title>
+    <title>Sharwa's Dev Ops Manifesto</title>
     <style>
-        /* This is the CSS! Updated for a professional dark mode look. */
+        /* CSS: Maintaining a professional dark-mode theme */
         body {
             font-family: 'Inter', sans-serif;
-            background-color: #1e293b; /* Dark slate blue background */
-            color: #f1f5f9; /* Light text color */
+            background-color: #0f172a; /* Deeper, darker background */
+            color: #e2e8f0; /* Light text color */
             text-align: center;
             padding: 30px;
             min-height: 100vh;
             display: flex;
             flex-direction: column;
-            justify-content: space-between; /* Helps push the footer to the bottom */
+            justify-content: space-between;
         }
         .container {
-            max-width: 800px;
+            max-width: 900px;
             margin: 0 auto;
-            padding: 20px;
-            background-color: #334155; /* Slightly lighter inner panel */
-            border-radius: 10px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            background-color: #1e293b; /* Primary dark panel */
+            border-radius: 12px;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.2), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
         }
         h1 {
-            color: #60a5fa; /* Vibrant blue title */
-            font-size: 2.5em;
-            margin-bottom: 20px;
-        }
-        p {
-            font-size: 1.1em;
-            line-height: 1.6;
-            margin: 15px 0;
+            color: #eab308; /* Gold/Yellow title for emphasis */
+            font-size: 2.8em;
+            margin-bottom: 25px;
+            text-shadow: 0 0 5px rgba(234, 179, 8, 0.4);
         }
         .points-section {
-            padding: 20px;
-            border-top: 2px solid #475569;
-            border-bottom: 2px solid #475569;
-            margin-bottom: 30px;
+            padding: 20px 0;
+            border-top: 1px dashed #475569;
+            border-bottom: 1px dashed #475569;
+            margin: 30px 0;
+        }
+        .point {
+            font-size: 1.3em;
+            line-height: 1.8;
+            margin: 25px 0;
+            font-weight: 300;
+        }
+        .highlight {
+            font-weight: 700;
+            color: #34d399; /* Green for key actions */
         }
         footer {
-            margin-top: 20px;
-            font-size: 0.9em;
+            margin-top: 40px;
+            padding-top: 10px;
+            font-size: 1em;
             color: #94a3b8;
         }
         .name-signature {
             font-weight: bold;
             font-style: italic;
-            font-size: 1.1em;
-            color: #34d399; /* Green signature color */
+            font-size: 1.2em;
+            color: #60a5fa; /* Blue signature color */
+            display: block;
+            margin-top: 5px;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>Hello everyone!</h1>
+        <h1>The Dev Ops Reality: It's Not Just Running Scripts.</h1>
         
         <div class="points-section">
-            <p>
-                Being a Dev Ops Engineer is about more than just running scripts. It's about:<br>
-                ✨ **Keeping Deployment Alive:** Ensuring the application is always running smoothly.<br>
-                🔄 **Automating Everything:** Making sure repetitive tasks happen automatically.<br>
-                🤝 **Bridging Teams:** Connecting development and operations for faster, better releases.<br>
-                🛠️ **Building the Pipeline:** Setting up the highway from code to user.
+            <p class="point">
+                The Call: When production crashes at 3 AM, it's the <span class="highlight">Dev Ops Engineer</span> who gets the alert. We don't just run scripts; we **keep the digital heart beating.**
+            </p>
+            
+            <p class="point">
+                **The High Stakes:** Our role is built on high responsibility. A single, small **misconfiguration** can cascade, taking the entire deployment pipeline down in seconds.
+            </p>
+
+            <p class="point">
+                **The True Mission:** We are the essential **balance** between rapid development and rock-solid operations, ensuring that new features ship reliably and safely.
             </p>
         </div>
 
-        <p>This website is deployed through my own CI/CD pipeline, powered by GitHub Pages!</p>
+        <p style="margin-top: 40px; color: #94a3b8; font-style: italic;">
+            This is my live, stable platform. This is the difference between automation and accountability.
+        </p>
     </div>
 
     <footer>
-        <p>Built by: <span class="name-signature">Sharwa Hodgar</span></p>
+        <p>DevOps Engineer</p>
+        <span class="name-signature">Sharwa Hodgar</span>
     </footer>
 
 </body>
