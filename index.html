@@ -3,42 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Cool Space Project</title>
-    <!-- We are loading Tailwind CSS here to make the website look nice! -->
-    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Sharwa's Dev Ops Journey</title>
     <style>
-        /* Setting a default font */
+        /* This is the CSS! Updated for a professional dark mode look. */
         body {
             font-family: 'Inter', sans-serif;
+            background-color: #1e293b; /* Dark slate blue background */
+            color: #f1f5f9; /* Light text color */
+            text-align: center;
+            padding: 30px;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between; /* Helps push the footer to the bottom */
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #334155; /* Slightly lighter inner panel */
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #60a5fa; /* Vibrant blue title */
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+        p {
+            font-size: 1.1em;
+            line-height: 1.6;
+            margin: 15px 0;
+        }
+        .points-section {
+            padding: 20px;
+            border-top: 2px solid #475569;
+            border-bottom: 2px solid #475569;
+            margin-bottom: 30px;
+        }
+        footer {
+            margin-top: 20px;
+            font-size: 0.9em;
+            color: #94a3b8;
+        }
+        .name-signature {
+            font-weight: bold;
+            font-style: italic;
+            font-size: 1.1em;
+            color: #34d399; /* Green signature color */
         }
     </style>
 </head>
-<body class="bg-gray-100 min-h-screen flex flex-col items-center justify-center p-4">
-
-    <!-- The main card for our content -->
-    <div class="bg-white p-8 md:p-12 shadow-2xl rounded-xl max-w-lg w-full text-center transform transition duration-500 hover:scale-[1.02]">
-
-        <!-- Main Title -->
-        <h1 class="text-4xl md:text-5xl font-extrabold text-indigo-700 mb-4 tracking-tight">
-            Hello, World! 🚀
-        </h1>
-
-        <!-- Subtitle/Description -->
-        <p class="text-xl text-gray-600 mb-6">
-            This website is officially hosted by **GitHub Pages**!
-        </p>
-
-        <!-- Fun Fact Section -->
-        <div class="bg-indigo-100 text-indigo-800 p-4 rounded-lg border-2 border-indigo-300">
-            <p class="font-semibold">Mini Challenge:</p>
-            <p class="text-sm">Change the background color (like `bg-blue-500`) and the emoji above!</p>
+<body>
+    <div class="container">
+        <h1>Hello everyone!</h1>
+        
+        <div class="points-section">
+            <p>
+                Being a Dev Ops Engineer is about more than just running scripts. It's about:<br>
+                ✨ **Keeping Deployment Alive:** Ensuring the application is always running smoothly.<br>
+                🔄 **Automating Everything:** Making sure repetitive tasks happen automatically.<br>
+                🤝 **Bridging Teams:** Connecting development and operations for faster, better releases.<br>
+                🛠️ **Building the Pipeline:** Setting up the highway from code to user.
+            </p>
         </div>
 
+        <p>This website is deployed through my own CI/CD pipeline, powered by GitHub Pages!</p>
     </div>
 
-    <!-- Footer for context -->
-    <footer class="mt-8 text-gray-500 text-sm">
-        File: index.html
+    <footer>
+        <p>Built by: <span class="name-signature">Sharwa Hodgar</span></p>
     </footer>
 
 </body>
